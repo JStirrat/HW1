@@ -9,6 +9,11 @@
         }
     </style>
 
+    <script>
+        function msgFunc() {
+            document.getElementById("msg").innerHTML = "Button Clicked!";
+        }
+    </script>
     
 </head>
 <body>
@@ -22,15 +27,8 @@
          of the programming i have done before, so branching into a different style of programming i think will help me develop new skills. Other than that, i am taking this as an elective for my major as well, so i hope to get
          a decent amount out of this class.
     </p>
-    <button type="button" id="btn">Click!</button>
+    <button type="button" onclick="msgFunc()">Click!</button>
     <p id="msg"></p>
-    <script>
-        function msgFunc() {
-            document.getElementById("msg").innerHTML = "Button Clicked!";
-        }
-        var btn = document.getElementById("btn");
-        btn.addEventListener("click", msgFunc)
-    </script>
     
     <img src="meme.jfif" alt="Funny web dev meme" width="600">
 
